@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Pseudo classes and Pseudo Elements</title>
+        <style>
+            input[type="number"]:out-of-range{
+                border: 2px solid violet;
+            }
+            input[type="number"]:in-range{
+                border: 2px solid goldenrod;
+            }
+            input[type="email"]:invalid{
+                border:2px solid red;
+            }
+            p::first-line{
+                text-decoration: underline;
+            }
+            p::first-letter{
+                font-size:20px;
+                color:red;
+            }
+            p::before{
+                content:"KLU:";"
+            }
+            p::after{
+                content:"END";
+            }
+            p::selection{
+                background-color: aqua;
+                color:white;
+            }
+            li::marker{
+                color:red;
+            }
+            .c1{
+                list-style-type: none;
+            }
+            .c1 li::before{
+                content: "\2713";
+                color:green;
+                margin-right: 5px;
+            }           
+        </style>
+    </head>
+    <body>
+        <input type="number" placeholder="enter age" min="0" max="18" style="width:500px">
+        <br><br>
+        <input type="email" placeholder="enter e mail address">
+        <br><br>
+        <p>
+            John Abraham (born 17 December 1972)[1][2] is an Indian actor and film producer who works in Hindi films. Known for his stoic action hero persona, he is a recipient of a National Film Award along with nominations for four Filmfare Awards. Abraham has appeared in Forbes India's Celebrity 100 list since 2017.[3]
+
+After a successful modelling career, Abraham made his acting debut with the erotic thriller film Jism (2003), a sleeper hit.[4][5] He rose to prominence with the action film Dhoom (2004) and the comedies Garam Masala (2005), Taxi No. 9211 (2006), and Dostana (2008). He also starred in the critically acclaimed dramas Water (2005), Kabul Express (2006) and New York (2009), the last of which also turned out to be a commercial success.
+        </p>
+        <ul>
+            <li> klu</li>
+            <li>excelr</li>
+            <li>devops</li>
+            <li>fsd</li>
+            <li>ci/cd</li>
+        </ul>
+        <ul class="c1">
+            <li> klu</li>
+            <li>excelr</li>
+            <li>devops</li>
+            <li>fsd</li>
+            <li>ci/cd</li>
+        </ul>
+</html>
