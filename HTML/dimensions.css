@@ -4,3 +4,19 @@
 .c2{
     font-size: 3rem;
 }
+.my_div{
+    font-size:2rem;
+    color: pink;
+}
+.c3{
+    font-size:3em;
+}
+.percent_cls{
+    width:400px;
+    height:250px;
+    border: 3px solid red;
+}
+.c4{
+    width:30%;
+    background-color: green;
+}
